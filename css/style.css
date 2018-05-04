@@ -14,22 +14,21 @@ h1,h2{
 }
 
 h2{
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 
 p{
-  font-size: 1.5rem;
-  margin: 20px;
-  
+  margin: 0;
+  padding: 0;
   font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  text-align: center;
 }
 
 a,a:hover{
   text-decoration: none;
 }
-
-
 
 
 section {
@@ -46,16 +45,33 @@ section {
   background-image: url("../img/pic01.jpg");
 }
 
-
-
-
-#Vision{
-  background-image: url("../img/pic02.jpg");
+#Mission{
+  background-image: url("../img/BlurTFDLQuad.jpg");
   background-attachment: fixed;
 }
-#Stories{
-  background-image: url("../img/pic05.jpg");
+
+#Mission p{
+  background-color: #ffffff50;
+  width: 100%;
+  padding: 20px 25%;
+  margin: 20px 0;
+  font-size: 1.75rem;
+  text-align: center;
 }
+
+
+#Stories{
+  background-color: white;
+}
+
+#Stories h2,p{
+  text-align: left;
+}
+#Stories p{
+  padding-right: 50px;
+}
+
+
 #Partners{
   background-image: url("../img/pic03.jpg");
   background-attachment: fixed;
@@ -74,13 +90,13 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;  
 }
 /* Button */
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
-  appearance: none;
   -moz-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -webkit-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -98,8 +114,8 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.325em;
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px #666666;
-  color: #444444 !important;
+  box-shadow: inset 0 0 0 2px #111111 ;
+  color: #111111 !important;
 }
 .button:hover {
   color: #8e44ad !important;
@@ -107,7 +123,11 @@ section {
 }
 
 .button:active {
-  background-color: rgba(239, 100, 128, 0.15);
+  background-color: #111111;
+}
+
+#whiteButton{
+  background-color: #ffffff50;
 }
 
 /* Navigation */
@@ -160,3 +180,4 @@ top:-5px;
   border-bottom:5px solid transparent;
   border-left:5px solid #5DB5A4;
 }
+
