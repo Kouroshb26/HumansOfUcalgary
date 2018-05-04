@@ -1,12 +1,30 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
 body {
   background: #000000;
 }
 body, html, main {
   height: 100%;    
 }
+h1{
+  font-size: 5rem;
+  margin: 20px;
+}
+p{
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+a,a:hover{
+  text-decoration: none;
+}
+
+
+
 
 section {
-  padding: 13% 0;
+  margin: 0;
+  padding: 0;
   height: 100%;
   position: relative;
   background-size: cover;
@@ -15,29 +33,78 @@ section {
 }
 
 #Title{
-  background-image: url("../img/pic05.jpg");
-
-  
+  background-image: url("../img/pic01.jpg");
 }
+#Title h1{
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+}
+
+
+
+
 #Vision{
-  background-image: url("../img/pic06.jpg")
+  background-image: url("../img/pic02.jpg");
+  background-attachment: fixed;
 }
 #Stories{
-  background-image: url("../img/pic07.jpg")
+  background-image: url("../img/pic05.jpg");
 }
 #Partners{
-  background-image: url("../img/pic06.jpg")
+  background-image: url("../img/pic03.jpg");
+  background-attachment: fixed;
+}
+
+#ContactUs{
+  height: 20%;
+  padding: 0;
 }
 
 
-section article{
+.content{
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Button */
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  padding: 0 2.5em 0 2.875em;
+  height: 3.75em;
+  line-height: 3.75em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.325em;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #666666;
+  color: #444444 !important;
+}
+.button:hover {
+  color: #8e44ad !important;
+  box-shadow: inset 0 0 0 2px #8e44ad;
 }
 
+.button:active {
+  background-color: rgba(239, 100, 128, 0.15);
+}
+
+/* Navigation */
 #dot-nav{ 
   position: fixed;   
   right: 0;

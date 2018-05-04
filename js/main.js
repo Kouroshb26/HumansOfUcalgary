@@ -30,8 +30,9 @@ $(document).ready(function(){
           }
           
           var docTop = $(document).scrollTop();
-          
-          if(docTop >= thisTop && (docTop < nextTop)){
+          console.log("doc top",docTop)
+          console.log("next top",nextTop)
+          if(docTop >= thisTop && (docTop < nextTop-200)){
             $('#dot-nav li').eq(i).addClass('active');
           }
         });   
