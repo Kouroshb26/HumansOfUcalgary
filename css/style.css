@@ -70,6 +70,12 @@ section {
 #Stories p{
   padding-right: 50px;
 }
+#image{
+  background-image: url("../img/Layton.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
 
 
 #Partners{
