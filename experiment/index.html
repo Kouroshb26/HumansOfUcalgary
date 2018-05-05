@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+    <title>Sysco Foodie Spring 2018</title>
+	
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Flipbook StyleSheet -->
+    <link href="css/dflip.css" rel="stylesheet" type="text/css">
+
+    <!-- Icons Stylesheet -->
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css">
+    <style>
+        body, html {
+            height:100%;
+            margin:0;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div id="flipbookContainer"></div>
+
+<!-- jQuery 1.9.1 or above -->
+<script src="js/libs/jquery.min.js" type="text/javascript"></script>
+
+<!-- Flipbook main Js file -->
+<script src="js/dflip.js" type="text/javascript"></script>
+
+<script>
+
+    var flipBook;
+
+    jQuery(document).ready(function () {
+
+        //make sure this file is hosted in localhost or any other server
+        //var pdf = 'pdf/Sysco-Global-Code-Of-Conduct.pdf';
+		
+		var pdf = '2018_ITCalgaryCoopStudent.pdf';
+		
+        var options = {
+            webgl:false,
+            height: "100%",
+            duration: 800,
+            autoEnableOutline:false, //auto open the outline/bookmarks tab
+			text: {
+	            toggleSound: "Turn on/off Sound",
+	            toggleThumbnails: "Toggle Thumbnails",
+	            toggleOutline: "Toggle Outline/Bookmark",
+	            previousPage: "Previous Page",
+	            nextPage: "Next Page",
+	            toggleFullscreen: "Toggle Fullscreen",
+	            zoomIn: "Zoom In",
+	            zoomOut: "Zoom Out",
+	            toggleHelp: "Toggle Help",
+	            singlePageMode: "Single Page Mode",
+	            doublePageMode: "Double Page Mode",
+	            downloadPDFFile: "Download PDF File",
+	            gotoFirstPage: "Goto First Page",
+	            gotoLastPage: "Goto Last Page",
+	            share: "Share"
+	        },
+	        //valid controlnames:
+	        //altPrev,pageNumber,altNext,outline,thumbnail,zoomIn,zoomOut,fullScreen,share,more
+	        //more,download,pageMode,startPage,endPage,sound
+	        allControls: "altPrev,pageNumber,altNext,thumbnail,zoomIn,zoomOut,fullScreen,download,pageMode,startPage,endPage,sound",
+	        mainControls: "altPrev,pageNumber,altNext,outline,thumbnail,zoomIn,zoomOut,fullScreen,share,download,pageMode,startPage,endPage,sound,more",
+	        hideControls: ""		
+	    };
+
+        /**
+         * outline is basically a array of json object as:
+         * {title:"title to appear",dest:"url as string or page as number",items:[]}
+         * items is the same process again array of json objects
+         */
+        options.outline = [
+            {title: "Page 1", dest: 1},
+            {title: "Page 2", dest:2},
+            {title: "StackOverflow", dest: "https://stackoverflow.com/",items:[
+                {title:"My Profile",dest :"https://stackoverflow.com/users/6687403/deepak-ghimire"},
+                {title:"Page 3",dest:3}
+            ]}
+        ];
+		
+		        // TRANSLATION text to be displayed
+
+
+        flipBook = $("#flipbookContainer").flipBook(pdf, options);
+    });
+
+</script>
+dflip/sound/turn2.mp3?ver=1.2.61 0 ()
+</body>
+</html>
