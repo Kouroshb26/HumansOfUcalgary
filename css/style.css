@@ -11,6 +11,7 @@ h1,h2{
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 6rem;
+  text-align: center;
 }
 
 h2{
@@ -46,8 +47,7 @@ section {
 }
 
 #Mission{
-  background-image: url("../img/BlurTFDLQuad.jpg");
-  background-attachment: fixed;
+  background: url("../img/BlurTFDLQuad.jpg") fixed;
 }
 
 #Mission p{
@@ -56,17 +56,16 @@ section {
   padding: 20px 25%;
   margin: 20px 0;
   font-size: 1.75rem;
-  text-align: center;
 }
 
 
 #Stories{
   background-color: white;
-  height: auto;
   padding: 50px 0;
+  height: auto;
 }
 
-#Stories h2,p{
+#Stories h2, #Stories p{
   text-align: left;
 }
 #Stories p{
@@ -74,16 +73,19 @@ section {
 }
 #image{
   background-image: url("../img/Layton.jpg");
+  background-position: center;
   background-size: cover;
   height: 100%;
   width: 100%;
   min-height: 700px;
 }
 
+#Projects{
+  background: url("../img/pic04.jpg") fixed;
+}
 
 #Partners{
-  background-image: url("../img/pic03.jpg");
-  background-attachment: fixed;
+  background: url("../img/pic03.jpg") fixed;
 }
 
 #ContactUs{
@@ -98,8 +100,8 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   text-align: center;
-  width: 100%;  
 }
 /* Button */
 .button {
@@ -135,7 +137,7 @@ section {
   background-color: #111111;
 }
 
-#whiteButton{
+.whiteButton{
   background-color: #ffffff50;
 }
 
@@ -161,7 +163,7 @@ border-radius: 15px 15px 15px 15px;
 cursor: pointer;
 padding: 5px;
 height: 10px;
-margin: 10px 10px 0px 0px;
+margin: 10px 10px 0 0;
 width: 10px;
 vertical-align:bottom;
 }
@@ -172,7 +174,7 @@ background-color: #5DB5A4;
 #dot-nav a {
 outline: 0;
 vertical-align:top;
-margin: 0px 0px 0px 25px;
+margin: 0 0 0 25px;
 position: relative;
 top:-5px;
 }
