@@ -10,6 +10,10 @@
   border: 1px solid #64a19d;
 }
 
+.padded-container{
+  padding: 1rem;
+}
+
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
@@ -33,45 +37,23 @@
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand {
-    padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  #mainNav .nav-link {
-    transition: none;
-    padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  #mainNav .nav-link:active {
-    color: white;
-  }
-  #mainNav.navbar-shrink {
     background-color: #fff;
   }
-  #mainNav.navbar-shrink .navbar-brand {
+  #mainNav .navbar-brand {
     color: #161616;
   }
-  #mainNav.navbar-shrink .nav-link {
+  #mainNav .nav-link {
     color: #161616;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
-  #mainNav.navbar-shrink .nav-link:hover {
+  #mainNav .nav-link:hover {
     color: #64a19d;
   }
-  #mainNav.navbar-shrink .nav-link:active {
+  #mainNav .nav-link:active {
     color: #467370;
   }
-  #mainNav.navbar-shrink .nav-link.active {
+  #mainNav .nav-link.active {
     color: #64a19d;
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
@@ -243,12 +225,13 @@
 
 .contact-section .social a {
   text-align: center;
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
-  line-height: 3rem;
+  line-height: 5rem;
   color: rgba(255, 255, 255, 0.3);
+    font-size: 3rem;
 }
 
 .contact-section .social a:hover {
@@ -299,4 +282,16 @@ footer {
   height: 100%;
   width: 100%;
   min-height: 700px;
+}
+
+
+.story{
+  margin-bottom: 2rem;
+}
+
+.story .card-img-top{
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
