@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-    // $("#stories")
 
     $.getJSON("stories.json",function(data){
         for (let i of data){
@@ -10,7 +9,7 @@ $( document ).ready(function() {
                     .append($("<div>").addClass("card-body")
                         .append($("<p>").addClass("card-text").text(i.text))))
 
-            $("#stories").append(card)
+            $("#content").append(card)
 
         }
     })
