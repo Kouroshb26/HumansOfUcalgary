@@ -7,7 +7,7 @@ $( document ).ready(function() {
                 .append($("<div>").addClass("card h-100")
                     .append($("<img>").addClass("card-img-top img-fluid").css("background-image", "url("+i.image+")").height("500px"))
                     .append($("<div>").addClass("card-body")
-                        .append($("<p>").addClass("card-text").text(i.text))))
+                        .append($("<p>").css("white-space","pre-line").addClass("card-text").text(i.text))))
 
             $("#content").append(card)
 
