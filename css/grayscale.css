@@ -316,3 +316,10 @@ footer {
   height: 100%;
   left: 0; top: 0;
 }
+
+
+/*Team Page*/
+
+.bio h3, bio h4, bio p{
+  padding-top: 25px;
+}
