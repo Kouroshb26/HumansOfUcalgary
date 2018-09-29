@@ -323,3 +323,65 @@ footer {
 .bio h3, bio h4, bio p{
   padding-top: 25px;
 }
+
+
+.bricklayer{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 1px) {
+  .bricklayer-column-sizer {
+  width: 100%;
+  }
+  .bricklayer{
+    max-width: 768px;
+  }
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:992px) {
+  .bricklayer-column-sizer {
+  width: 50%;
+  }
+  .bricklayer{
+    max-width: 992px;
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+  .bricklayer-column-sizer {
+    width: 33%;
+  }
+  .bricklayer{
+    max-width: 1200px;
+  }
+
+}
+
+
+
+
+/*@media screen and (min-width: 1200px) {*/
+  /*.bricklayer-column-sizer {*/
+    /*!* divide by 3. *!*/
+    /*width: 33.3%;*/
+  /*}*/
+/*}*/
+
+/*@media screen and (min-width: 768px) {*/
+  /*.bricklayer-column-sizer {*/
+    /*!* divide by 2. *!*/
+    /*width: 50%;*/
+  /*}*/
+/*}*/
