@@ -2,8 +2,8 @@
 var applicationStart = new Date("Sept 2 2019 9:00:00 GMT-0600");
 var applicationEnd = new Date("Sept 18 2019 16:00:00 GMT-0600");
 
-var applicationStartTest = new Date("Aug 29 2019 20:00:00 GMT-0600");
-var applicationEndTest = new Date("Aug 29 2019 23:00:00 GMT-0600");
+var applicationStartTest = new Date("Aug 30 2019 20:30:00 GMT-0600");
+var applicationEndTest = new Date("Aug 30 2019 23:00:00 GMT-0600");
 
 var timer = setInterval(function() {
 
