@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description"
-            content="University of Calgary is a vibrant community, with individuals hailing from many different backgrounds. All have diverse perspectives on life, love, learning, and everything in between. Our objective is to share the stories and photos of students, faculty, alumni, and staff from UCalgary and create a greater sense of community.">
+    <meta name="description"
+          content="University of Calgary is a vibrant community, with individuals hailing from many different backgrounds. All have diverse perspectives on life, love, learning, and everything in between. Our objective is to share the stories and photos of students, faculty, alumni, and staff from UCalgary and create a greater sense of community.">
     <meta name="author" content="Kourosh Banaeianzadeh">
     <meta name="keywords" content="Humans of UCalgary,UCalgary,University of Calgary,Humans,Calgary,Stores">
 
@@ -51,7 +51,7 @@
             </li>
             <!--<li class="nav-item">-->
               <!--<a class="nav-link js-scroll-trigger" href="#partners">Partners</a>-->
-            </li>
+            <!--</li>-->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contactUs">Contact us</a>
             </li>
@@ -80,11 +80,6 @@
             <p class="text-white-50">University of Calgary is a vibrant community, with individuals hailing from many different backgrounds. All have diverse perspectives on life, love, learning, and everything in between.<br><br>
               Our objective is to share the stories and photos of students, faculty, alumni, and staff from UCalgary and create a greater sense of community.<br><br>
               <a href="Team/" class="btn btn-primary">Our Team</a></p>
-
-            <h3 class="text-white mb-4"> Wanna join our team?</h3>
-            <p class="text-white-50">
-              Well you are in luck. We have photojournalist applications open from September 2nd at 9am till September 18th at 4pm.<br><br>
-              <a href="apply/" class="btn btn-primary">Apply Now!</a></p>
           </div>
         </div>
       </div>
@@ -98,7 +93,7 @@
         </div>
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-6">
-            <img id="spotlightImage" class="img-fluid mb-3 mb-lg-0" src="Stories/Layton.jpg" alt="">
+            <img id="spotlightImage" class="img-fluid mb-3 mb-lg-0" alt="">
           </div>
 
           <div class="col-xl-6">
@@ -212,6 +207,25 @@
 
     <!--Filling in the spotlight post-->
     <script src="spotlight.js"></script>
+
+    <!-- Website Config Script-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        $.ajax({
+          url: "./website-config.json",
+          async: false,
+          success: function (config) {
+            if (config.recruit) {
+              document.getElementById("about-content").insertAdjacentHTML('beforeend',
+                      `<h3 class="text-white mb-4"> Wanna join our team?</h3>
+                            <p class="text-white-50">
+                                Well you are in luck. We have photojournalist applications open from September 2nd at 9am till September 18th at 4pm.<br><br>
+                                <a href="apply/" class="btn btn-primary">Apply Now!</a></p>`);
+            }
+          }
+        });
+      });
+    </script>
 
   </body>
 

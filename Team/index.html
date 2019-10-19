@@ -64,12 +64,8 @@
     <section>
         <div class="container text-center padded-container">
             <h1> Team</h1>
-            <p>
+            <p id="team-page-description">
                 We are all amazing and crazy people that get together to run this beautiful club.<br>
-                Wanna join the team?
-                <br>
-                <br>
-                <a href="../apply" class="btn btn-primary">Apply now!</a>
             </p>
         </div>
 
@@ -291,6 +287,26 @@
     <!-- Custom scripts for this template -->
     <script src="../js/grayscale.min.js"></script>
 
+
+    <!-- Website Config -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          $.ajax({
+              url: "../website-config.json",
+              async: false,
+              success: function (config) {
+
+                  if (config.recruit) {
+                      document.getElementById("team-page-description").insertAdjacentHTML('beforeend',
+                          `Wanna join the team?
+                           <br>
+                           <br>
+                           <a href="../apply" class="btn btn-primary">Apply now!</a>`);
+                  }
+              }
+          });
+      });
+    </script>
   </body>
 
 </html>
