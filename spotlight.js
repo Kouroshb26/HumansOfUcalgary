@@ -1,10 +1,10 @@
 $( document ).ready(function() {
 
     $.getJSON("Stories/media.json",function(data){
-        let i = data.photos[0]
+        let i = data[0];
 
         $("#spotlightText").text(i.caption).css("white-space","pre-line")
-        $("#spotlightImage").attr("src","Stories/"+i.path)
+        $("#spotlightImage").attr("src","Stories/"+i.image)
 
     })
 
