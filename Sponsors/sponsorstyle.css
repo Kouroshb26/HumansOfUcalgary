@@ -1,0 +1,51 @@
+#sponsorTable .benefits{
+    color: red;
+}
+
+#sponsorTable .platnium{
+    color: blue;
+}
+
+#sponsorTable .gold{
+    color: goldenrod;
+}
+
+#sponsorTable .silver{
+    color: rgb(99, 83, 83);
+}
+
+
+#sponsorTable .bronze{
+    color: rgb(161, 70, 28);
+}
+
+#sponsorTable .benefitsText p{
+    color:black;
+    
+}
+
+#sponsorTable .platniumText p{
+    color:black;
+        
+}
+
+#sponsorTable .goldText p {
+    color:black;
+        
+}
+
+#sponsorTable .silverText p{
+    color:black;
+        
+}
+
+#sponsorTable .bronzeText p{
+    color:black;
+}
+
+#sponsorTable p{
+    margin-left:0px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
